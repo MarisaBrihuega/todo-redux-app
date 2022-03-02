@@ -21,7 +21,8 @@
     "lib": [
       "es2020",
       "dom"
-    ]
+    ],
+    "strictPropertyInitialization": false //para no tener que estrictamente inicializar todas las variables
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

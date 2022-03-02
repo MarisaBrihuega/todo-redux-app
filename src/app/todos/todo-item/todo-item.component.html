@@ -1,0 +1,9 @@
+<li [class.completed]="todo.completado" [class.editing]="editando">
+    <div class="view">
+        <input class="toggle" [formControl]="checkCompletado" type="checkbox">
+        <label (dblclick)="editar()">{{todo.texto}}</label>
+        <button class="destroy" (click)="borrarTodo()"></button>
+    </div>
+    <!-- Cuando el input pierde el foco se llama BLUR -->
+    <input #edition class="edit" (blur)="terminarEdicion()" [formControl]="txtInput" type="text">
+</li>
